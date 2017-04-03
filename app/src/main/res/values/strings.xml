@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">骑行助手DPS</string>
+    <string name="Start_point">起点:</string>
+    <string name="End_point">终点:</string>
+    <string name="Change_start_point">更改</string>
+    <string name="start_nai">直 接 导 航</string>
+    <string name="Start_point_strings_hint">当前位置</string>
+    <string name="show_line">查 看 路 线</string>
+    <string name="textshow">1172012468@qq.com \u2000(邮箱)\n\n3319596933 \u2000(QQ)</string>
+
+
+
+    <!--  DeviceListActivity -->
+    <string name="scanning">正在查找设备...</string>
+    <string name="select_device">选择连接设备</string>
+    <string name="none_found">未发现其他设备</string>
+    <string name="title_paired_devices">已配对成功的设备</string>
+    <string name="title_other_devices">附近存在的设备</string>
+    <string name="button_scan">搜寻其他设备</string>
+    <string name="cancel">取消</string>
+    <string name="ok_action">确定</string>
+
+    <!-- Options Menu -->
+
+    <string name="text_show">点击\n连接蓝牙</string>
+    <string name="title_activity_dateil_some_thing">功能详细介绍</string>
+    <string name="large_text">
+        "出发，为了诗和远方\n\n"
+
+        "\u2000\u3000骑行助手系统主要分两部分，一部分是基于高德地图SDK的手机端应用（目前仅支持Android系统），另一部分是单片机串口HC-05蓝牙模块下的指示系统，目的是解决骑行外出时，因为不识路或停下来查看路线的问题。\n\n"
+        "\u2000\u3000流程先由手机端自主定制的应用规划路线，然后开始导航，通过HC-05（名称为VSIR-05）接受手机发出的导航信息，将该信息交由微控制器处理，进而在单片机系统上以简单的指示方式显示，确定线路。同时保证使用时的用户体验。\n\n"
+        "\u2000\u3000骑行助手系统的创新点在于以一种轻量的显示方式，指示线路，在一定程度上避免了骑行者因为确定线路而导致的时间损耗和复杂路况带来的的危险。这也是与其他导航系统相比的优点。\n\n"
+        "\u2000\u3000骑行助手实质上是一个导航系统，与市面上做的非常好的导航应用（百度导航、高德导航等）相比。“骑行助手”的优势在于增加了外部的指示系统。节约时间也更加注重骑行安全， “骑行助手”从某个角度来说弥补了这些手机应用导航的漏洞。比较常见的还有车载导航，但车载导航体积庞大，重量大，并且价格昂贵，更加不适合用在骑行导航上。\n\n"
+        "\u2000\u3000从技术层面上来说，“骑行助手”所有导航数据都来自高德地图（AMAP），通过对SDK的二次开发，导航直接在应用内完成，用户体验较完整；有路径规划功能。可以实现一些特定需要的功能，目的性和针对性也较强。数据的传输较轻量，较快速，保证了导航的实效性和准确性，其次，定位采用混合定位，高精度模式，精度可以达到 1—3 米。并且蓝牙模块的传输距离小于等于10米，所以其受外界干扰的信号源较少。更加保证导航精准，数据传输准确、稳定。\n\n"
+        "温馨提示：\n\n"
+        "\u2000\u30001. 本软件（骑行助手DPS）需要配合指示系统（骑行助手DRS）使用。\n\n"
+        "\u2000\u30002. 当前仅为测试版本，仅在部分机型测试，若设备Android系统在4.0以下，可能会出现索引资源失败导致系统崩溃(根本原因为内部使用WebP格式图片资源，但4.0以下设备不兼容WebP格式图片资源）。\n\n"
+        "\u2000\u30003. 该系统仅为参加挑战杯比赛，故暂时未在各大Android应用商店上架。\n\n"
+        "\u2000\u30004. VSIR团队所有，非商业用途。\n\n"
+    </string>
+
+    <string name="primary_color">选择颜色</string>
+    <string name="primary_darkcolor">dark_color</string>
+
+    <string name="preference_include_video">set_include_video</string>
+
+    <string name="preference_auto_update_media">auto_update_media</string>
+    <string name="preference_use_alternative_provider">alternative_provider</string>
+    <string name="preference_delay_full_image">set_delay_full_image</string>
+    <string name="preference_auto_rotate">set_picture_orientation</string>
+    <string name="preference_max_brightness">set_max_luminosity</string>
+    <string name="preference_translucent_status_bar">set_translucent_statusbar</string>
+    <string name="preference_colored_nav_bar">nav_bar</string>
+    <string name="preference_base_theme">basic_theme</string>
+    <string name="preference_primary_color">primary_color</string>
+    <string name="preference_accent_color">accent_color</string>
+    <string name="preference_apply_theme_pager">apply_theme_img_act</string>
+    <string name="preference_transparency">set_alpha</string>
+    <string name="preference_map_provider">map_provider</string>
+
+    <string name="preference_password_value">password_value</string>
+    <string name="preference_use_password">active_security</string>
+    <string name="preference_use_password_on_hidden">password_on_hidden</string>
+    <string name="preference_use_password_on_delete">password_on_delete</string>
+    <string name="preference_internal_uri_extsdcard_photos">uri_extsdcard_photos</string>
+    <string name="preference_show_fab">show_fab</string>
+    <string name="preference_sub_scaling">use_sub_scaling</string>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="customBackground" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/welcomebg</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+</resources>

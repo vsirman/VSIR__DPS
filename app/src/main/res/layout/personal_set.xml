@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<include
+    layout="@layout/toolbar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="系统"
+        android:textSize="10sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:cardElevation="1dp"
+        app:cardMaxElevation="5dp"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+
+            <android.support.v7.widget.SwitchCompat
+                android:text="模拟导航"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/switch1"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:paddingLeft="22dp" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:paddingTop="8dp"
+        android:id="@+id/speedVlay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="模拟骑行速度"
+                android:gravity="center_vertical"
+                android:textSize="12sp"
+                android:paddingLeft="16dp"
+                android:textColor="@color/offline_down_size"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="(模拟导航时的行进速度)"
+                android:gravity="bottom"
+                android:textSize="10sp"
+                android:paddingLeft="6dp"
+                android:textColor="@color/colorBlack"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <SeekBar
+                style="@style/Widget.AppCompat.SeekBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="60"
+                android:id="@+id/seekBar"
+                android:layout_weight="0.8"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:gravity="center_vertical"
+                android:text="60Km/h"
+                android:id="@+id/speedText" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:cardElevation="1dp"
+        app:cardMaxElevation="5dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/cardview1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+
+            <android.support.v7.widget.SwitchCompat
+                android:text="蓝牙状态"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/switch2"
+                android:layout_weight="1"
+                android:paddingLeft="22dp" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:cardElevation="1dp"
+        app:cardMaxElevation="5dp"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="22dp"
+            android:background="@drawable/ripple_with_no_mask"
+            android:id="@+id/relativeLayout2"
+            android:clickable="true"
+            android:focusable="true">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="缓存清理"
+                android:gravity="center_vertical"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:duplicateParentState="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="13dp"
+                android:gravity="center_vertical"
+                android:duplicateParentState="true"
+                android:id="@+id/data"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我们"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="10sp"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:cardElevation="1dp"
+        app:cardMaxElevation="5dp"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="22dp"
+            android:background="@drawable/ripple_with_no_mask"
+            android:id="@+id/relativeLayout3"
+            android:clickable="true"
+            android:focusable="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="功能介绍"
+                android:gravity="center_vertical"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:duplicateParentState="true"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/arrow_right"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                android:duplicateParentState="true"
+                android:id="@+id/image3"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:cardElevation="1dp"
+        app:cardMaxElevation="5dp"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="22dp"
+            android:background="@drawable/ripple_with_no_mask"
+            android:id="@+id/relativeLayout4"
+            android:clickable="true"
+            android:focusable="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="更换主题"
+                android:gravity="center_vertical"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:duplicateParentState="true"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/arrow_right"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                android:duplicateParentState="true" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:cardElevation="1dp"
+        app:cardMaxElevation="5dp"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="22dp"
+            android:background="@drawable/ripple_with_no_mask"
+            android:id="@+id/relativeLayout"
+            android:clickable="true"
+
+            android:focusable="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="联系我们"
+                android:gravity="center_vertical"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:duplicateParentState="true"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/arrow_right"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                android:duplicateParentState="true"
+                android:id="@+id/image"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

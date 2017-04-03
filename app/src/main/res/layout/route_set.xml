@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include
+        layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="70dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/Start_point"
+                    android:layout_weight="0.2"
+                    android:textSize="15sp"
+                    android:gravity="center"/>
+
+                <LinearLayout
+                    android:background="@drawable/shape_corner_white"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.75"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.15"
+                        android:src="@drawable/start1"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.75"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/Start_point_strings_hint"
+                        android:id="@+id/tv_start"/>
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:text="@string/Change_start_point"
+                        android:background="@color/transparent"
+                        android:textColor="@color/butcolor"
+                        android:id="@+id/bt_change" />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/End_point"
+                    android:textSize="15sp"
+                    android:layout_weight="0.2"
+                    android:gravity="center"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.75"
+                    android:orientation="horizontal"
+                    android:background="@drawable/shape_corner_white">
+
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.15"
+                        android:src="@drawable/end1"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:gravity="center_vertical"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.75"
+                        android:layout_gravity="center"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:id="@+id/tv_end"
+                       />
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+
+                        <Button
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:id="@+id/close"
+                            android:visibility="invisible"
+                            android:background="@drawable/ic_close_16dp"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal">
+
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/show_line"
+            android:textSize="15sp"
+            android:background="@color/butcolor"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:id="@+id/bt_show_Line" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/blue"
+            android:text="@string/start_nai"
+            android:textSize="15sp"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+            android:id="@+id/bt_go_naiv" />
+    </LinearLayout>
+
+
+</LinearLayout>

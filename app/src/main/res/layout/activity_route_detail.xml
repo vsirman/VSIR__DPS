@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/act_background"
+    android:orientation="vertical" >
+
+
+    <include
+        layout="@layout/toolbar"/>
+
+
+    <LinearLayout
+        android:id="@+id/bus_path"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/firstline"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="12dp"
+            android:gravity="center_vertical"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e0e0e0"/>
+
+    <ListView
+        android:id="@+id/bus_segment_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/transparent"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dp"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="@color/transparent" >
+    </ListView>
+    </LinearLayout>
+
+</LinearLayout>
